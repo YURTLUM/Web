@@ -1,0 +1,418 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body
+{
+	/* background-color:#535353; */
+	font-family: 'Kanit', sans-serif;
+    font-variant-ligatures: none;
+	font-weight:400;
+}
+  
+
+
+/* HEADER */
+header {
+    font-size: 1.6rem;
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: #444CF7;
+    align-items: center;
+    justify-content: center;
+}
+.orta {
+    display: flex;
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+/* NAVBAR */
+#ustlogo{
+    height: 60px;
+}
+
+/*CSS3 STROKE EFFECT*/
+#mainNav ul {
+    display: inline;
+    list-style: none;
+    margin: 0;
+}
+#mainNav ul li {
+    display: inline-block;
+    display: inline;
+    margin: 15px;
+}
+#mainNav ul li a {
+    padding-bottom: 5px;
+    text-decoration: none;
+    color:#fff;
+}
+#mainNav ul li a,
+#mainNav ul li a:after,
+#mainNav ul li a:before {
+    transition: all .3s;
+}
+#mainNav ul li a:hover {
+    color:#fff;
+}
+/* stroke */
+#mainNav.stroke ul li a
+{
+    position: relative;
+}
+#mainNav.stroke ul li a:after,
+#mainNav ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #fff;
+    height: 3px;
+    border-radius: 100px;
+}
+#mainNav.stroke ul li a:hover:after {
+     width: 100%;
+}
+
+#mainNav ul li a {
+     transition: all 1s;
+}
+
+#mainNav ul li a:hover {
+    color: #fff;
+}
+#mainNav ul li a:hover:after {
+    animation: fill 1s forwards;
+    opacity: 1;
+}
+/* RADİO BUTTON */
+.radio-button-container {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 16rem;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .radio-button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .radio-button__input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .radio-button__label {
+    display: inline-block;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 15px;
+    color: #f2f2f2;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .radio-button__custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #444CF7;
+    transition: all 0.3s ease;
+  }
+  
+  .radio-button__input:checked + .radio-button__label .radio-button__custom {
+    background-color: #444CF7;
+    border-color: transparent;
+    box-shadow: 0 0 20px #4c8bf580;
+  }
+  
+  .radio-button__input:checked + .radio-button__label {
+    color: #4c8bf5;
+  }
+  
+  .radio-button__label:hover .radio-button__custom {
+    transform: scale(1.2);
+    border-color: #444CF7;
+    box-shadow: 0 0 20px #4c8bf580;
+  }
+  
+  
+  
+  
+  
+  
+
+/* MAİN SECTİON */
+/* ANA SAYFA - PROJELER*/
+#anasayfa{
+    margin-bottom: 50px;
+}
+
+.mainyazi{
+    font-size: 5rem;
+}
+.mainaltyazi{
+    margin-top: 1.5rem;
+    font-size: 2.5rem;
+}
+.ilet{
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #444CF7;
+    color: #fff;
+    border: 3px solid #444CF7;
+}
+.ilet:hover{
+    background-color: #fff;
+    color: #444CF7;
+}
+.ilet:active{
+    transform: translate(0, 5px);
+}
+
+.typewrite{
+    color: #444CF7;
+}
+
+.slider{
+    display: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.slider-1{
+    display: flex;
+}
+
+.yazi{
+    width: 60rem;
+    margin: 3rem;
+}
+
+#anasayfa > div > div.blob > .blobweb{
+    height: 40rem;
+    margin: 3rem;
+    position: relative;
+}
+.blob{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.threeweb{
+    position: absolute;
+    z-index: 1;
+    height: 30rem;
+}
+
+.hakkimizda, .projeler, .gruplar, .iletisim{
+    background-color: #444CF7;
+    height: 100px;
+    font-size: 3rem;
+    line-height: 100px;
+    color: #fff;
+    text-align: center;
+}
+
+@keyframes scroll{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#gruplar{
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+}
+.logos{
+    /* animation: scroll 10s linear infinite; */
+}
+
+.hakkimizdayazi{
+    text-align: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    font-size: 2rem;
+    
+}
+
+.sites{
+    max-width: 1300px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.site{
+    width: 300px;
+    height: 200px;
+    border-radius: 30px;
+    background: url(https://cdn.hosting.com.tr/blog/wp-content/uploads/2021/11/internet-sitesi-kurma-rehberi-scaled.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px;
+    border: 5px solid #444CF7;
+    transition: transform 240ms linear;
+}
+.site:hover{
+    transform: scale(1.05);
+}
+.logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.logos > a{
+    padding: 20px;
+    background: #E6E6E6;
+    border-radius: 20px;
+    margin: 30px;
+}
+.logos > a:hover{
+    fill: #fff;
+    background: #444CF7;
+}
+
+
+/* FOOTER */
+
+.sosyalmedya{
+    background-color: #1A1A1A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+    font-size: 3rem;
+}
+
+.sosyalmedya > a{
+    margin: 10px;
+    color: #fff;
+}
+.sosyalmedya > a:hover{
+    color: #444CF7;
+}
+
+
+.ilgilenme{
+    text-align: center;
+    font-size: 3rem;
+    margin: 40px;
+}
+
+.copyright{
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: #444CF7;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+}
+
+
+/* RESPONSIVE MEDIA SCREEN */
+@media only screen and (max-width: 868px) {
+    html{
+        font-size: 9px;
+    }
+    .slider {
+        flex-direction: column;
+    }
+    body{
+        background-color: lightblue;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width: 720px) {
+    html{
+        font-size: 8px;
+    }
+    body {
+      background-color: lightgreen;
+    }
+    img#ustlogo{
+        height: 45px;
+    }
+    .orta {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+}
+
+@media only screen and (max-width: 610px) {
+    html{
+        font-size: 7px;
+    }
+    body {
+      background-color: lightpink
+    }
+    
+    #mainNav{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    html{
+        font-size: 6px;
+    }
+    body {
+      background-color: lightcoral
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    html{
+        font-size: 5px;
+    }
+    body {
+      background-color: rgb(192, 60, 60)
+    }
+}
+
+
